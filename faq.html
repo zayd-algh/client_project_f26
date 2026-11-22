@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ | UMSI ELO</title>
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="images/UMSI_signature_vertical_informal_solidblue.jpg"
+    />
   </head>
   <body>
     <header>
-      <a href="#main">Skip to Main Content</a>
+      <a class="skip-link" href="#main">Skip to Main Content</a>
       <img
         src="images/UMSI_signature_vertical_informal_solidblue.jpg"
         alt="UMSI Logo"
@@ -18,7 +23,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="prep.html">Preparing for Your Experience</a></li>
           <li><a href="start.html">Starting Your Experience</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a aria-current="page" href="faq.html">FAQ</a></li>
         </ul>
       </nav>
       <h1>Frequently Asked Questions</h1>
@@ -30,62 +35,77 @@
         <p>
           Every engaged learning project runs into a few of the same bumps along
           the way. Here are answers to some questions students often have once
-          their project is underway.
+          their project is underway. Select a question to see the answer.
         </p>
 
-        <article>
-          <h3>
-            What if my team doesn't know how to do what is being asked of us?
-          </h3>
-          <p>
-            Your team may not know everything you need for this project. This is
-            your opportunity to learn something new, ask other members of your
-            team for help, and contact your instructor or partner if needed.
-          </p>
-        </article>
+        <div class="two-columns">
+          <details>
+            <summary>
+              <h3>
+                What if my team doesn't know how to do what is being asked of
+                us?
+              </h3>
+            </summary>
+            <p>
+              Your team may not know everything you need for this project. This
+              is your opportunity to learn something new, ask other members of
+              your team for help, and contact your instructor or partner if
+              needed.
+            </p>
+          </details>
 
-        <article>
-          <h3>What if my partner company isn't responding to me?</h3>
-          <p>
-            Reach out to them. Send them a nice check in and let them know that
-            you would like to continue working with them. Sometimes all it takes
-            is a simple email to get things going again.
-          </p>
-        </article>
+          <details>
+            <summary>
+              <h3>What if my partner company isn't responding to me?</h3>
+            </summary>
+            <p>
+              Reach out to them. Send them a nice check in and let them know
+              that you would like to continue working with them. Sometimes all
+              it takes is a simple email to get things going again.
+            </p>
+          </details>
 
-        <article>
-          <h3>What if the scope of the project seems too large?</h3>
-          <p>
-            You don't have to do it all at once. Work on small things at a time
-            and speak with your partner if there are any issues you would like
-            to address. Have an uncomfortable conversation with them and work
-            out a solution.
-          </p>
-        </article>
+          <details>
+            <summary>
+              <h3>What if the scope of the project seems too large?</h3>
+            </summary>
+            <p>
+              You don't have to do it all at once. Work on small things at a
+              time and speak with your partner if there are any issues you would
+              like to address. Have an uncomfortable conversation with them and
+              work out a solution.
+            </p>
+          </details>
 
-        <article>
-          <h3>What if my teammate is not doing their fair share?</h3>
-          <p>
-            Remind them to do their work and offer to help them out if you can.
-            Speak with your instructor if necessary to resolve the situation.
-          </p>
-        </article>
+          <details>
+            <summary>
+              <h3>What if my teammate is not doing their fair share?</h3>
+            </summary>
+            <p>
+              Remind them to do their work and offer to help them out if you
+              can. Speak with your instructor if necessary to resolve the
+              situation.
+            </p>
+          </details>
 
-        <article>
-          <h3>What if I'm not sure what my partner wants from us?</h3>
-          <p>
-            Don't assume what they want. Ask for examples or more information if
-            you are unsure of what is expected from your team.
-          </p>
-        </article>
+          <details>
+            <summary>
+              <h3>What if I'm not sure what my partner wants from us?</h3>
+            </summary>
+            <p>
+              Don't assume what they want. Ask for examples or more information
+              if you are unsure of what is expected from your team.
+            </p>
+          </details>
 
-        <article>
-          <h3>What if we are falling behind?</h3>
-          <p>
-            Re-evaluate your plan. Make sure to communicate with your team and
-            partner. If you need to change things around, do so now.
-          </p>
-        </article>
+          <details>
+            <summary><h3>What if we are falling behind?</h3></summary>
+            <p>
+              Re-evaluate your plan. Make sure to communicate with your team and
+              partner. If you need to change things around, do so now.
+            </p>
+          </details>
+        </div>
       </section>
     </main>
 
@@ -100,7 +120,10 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>
+        &copy; <span id="year">2026</span> Regents of the University of Michigan
+      </p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
