@@ -4,8 +4,10 @@ body {
   line-height: 1.6;
   color: #1a1a1a;
   background-color: #ffffff;
-  max-width: 90rem;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 h1,
@@ -280,11 +282,7 @@ footer :last-child {
     height: 100%;
     text-align: center;
     border-left: none;
-    border-bottom: 6px solid transparent;
-  }
-
-  nav a[aria-current="page"] {
-    border-bottom-color: #00274c;
+    border-bottom: none;
   }
 
   .cards-grid {
@@ -318,6 +316,11 @@ footer :last-child {
     grid-template-columns: auto 1fr;
     align-items: center;
     column-gap: 2rem;
+  }
+
+  nav,
+  nav ul {
+    height: 100%;
   }
 
   header h1 {
